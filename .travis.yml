@@ -40,7 +40,7 @@ script:
   - ls -la
   - git add amexio-chart-d3.tgz
   - git commit -m "date"
-  - #if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then  git push --force --quiet "https://deepali-arvind:${D3CHART_TOKEN}@github.com/meta-magic/d3-charts-tar.git" HEAD:master; fi
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then  git push --force --quiet "https://deepali-arvind:${D3CHART_TOKEN}@github.com/meta-magic/d3-charts-tar.git" HEAD:master; fi
 after_success: 
   - codecov
 cache:

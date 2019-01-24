@@ -1,0 +1,21 @@
+<div   *ngIf="drillableFlag">
+<amexio-d3-chart-donut #id (onLegendClick)="legendClick($event)" 
+                       (onChartClick)="chartClick($event)" 
+                       (drillableEvent)=" fordrillableClick($event)"
+                        [height]="height"
+                        [width]="width"
+                        [title]="title"
+                        [data] = "data"
+                        [pie]  = "true"
+                        [color]="colors"
+                        [http-url]="httpurl"
+                        [http-method]="httpmethod"
+                        [data-reader]="datareader"
+                        [label]="labelflag"
+                        [label-color]="labelcolor"
+                        [level]="level"
+                        [target]="target"
+                        [drillable-data]="drillabledatakey"
+                        [drillData]="drillData">
+</amexio-d3-chart-donut>
+</div>

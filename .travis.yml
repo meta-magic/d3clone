@@ -34,6 +34,7 @@ script:
   - cd ..
   - pwd
   - git clone https://github.com/meta-magic/d3-charts-tar.git
+  - ls -la
   - cd /home/travis/build/meta-magic/d3-charts-tar
   - cp -rf ../d3clone/amexio-chart-d3.tgz .
   - ls -la

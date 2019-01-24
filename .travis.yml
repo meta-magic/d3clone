@@ -31,7 +31,7 @@ before_script:
   - mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz   
 script: 
   - git clone https://github.com/meta-magic/d3-charts-tar.git
-  - cd d3charts-tar/
+  - cd d3-charts-tar/
   - cp -rf ../amexio-chart-d3.tgz .
   - git add amexio-chart-d3.tgz
   - git commit -m "date"
